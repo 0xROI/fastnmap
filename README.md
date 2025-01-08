@@ -20,13 +20,17 @@ This project is a **C-based wrapper** for `nmap` that performs fast port scannin
    ```bash
    git clone https://github.com/0xROI/fastnmap
    gcc -static -o fastnmap fastnmap.c
-##User Manual
+##User Manual:
+
 `./nmap_scan_wrapper <target-ip> [tcp|udp]`
 For a TCP scan:
+
 `./nmap_scan_wrapper 192.168.1.1 tcp`
 For a UDP scan:
+
 `./nmap_scan_wrapper 192.168.1.1 udp`
 Output:
+
 `nmap_<scan-type>_scan_<target-ip>_<timestamp>.txt`
 
 ##Download the Binary
