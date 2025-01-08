@@ -1,6 +1,7 @@
 # Fast Port Scanning Wrapper for Nmap (Written in C)
 
 This project is a **C-based wrapper** for `nmap` that performs fast port scanning. The tool runs an initial scan to find open ports and then performs an aggressive scan on those open ports. The program is **statically compiled**, meaning all required libraries are included in the binary itself, making it portable across different Linux-based systems.
+**Warning**: This tool performs network scans that might trigger firewalls or intrusion detection systems (IDS). Please use it responsibly and only on systems you have permission to scan.
 
 ## Features
 - **TCP** and **UDP** port scan support using `nmap`.
@@ -8,9 +9,6 @@ This project is a **C-based wrapper** for `nmap` that performs fast port scannin
 - Runs an **aggressive scan** on detected open ports for detailed information.
 - **Static compilation** ensures the binary runs independently of system libraries.
 - Saves the output in a file with a timestamp for easy tracking.
-
-**Warning**: This tool performs network scans that might trigger firewalls or intrusion detection systems (IDS). Please use it responsibly and only on systems you have permission to scan.
-
 
 ## Requirements
 - **GCC** (GNU Compiler Collection) installed for compiling the source code.
