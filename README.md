@@ -18,6 +18,19 @@ This project is a **C-based wrapper** for `nmap` that performs fast port scannin
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/nmap-scan-tool.git
-   cd nmap-scan-tool
-   gcc -static -o nmap_scan_wrapper nmap_scan_wrapper.c
+   git clone https://github.com/0xROI/fastnmap
+   gcc -static -o fastnmap fastnmap.c
+##User Manual
+`./nmap_scan_wrapper <target-ip> [tcp|udp]`
+For a TCP scan:
+`./nmap_scan_wrapper 192.168.1.1 tcp`
+For a UDP scan:
+`./nmap_scan_wrapper 192.168.1.1 udp`
+Output:
+`nmap_<scan-type>_scan_<target-ip>_<timestamp>.txt`
+
+##Download the Binary
+You can download the statically compiled binary from the latest release here: [https://github.com/0xROI/fastnmap/raw/refs/heads/main/fastnmap
+](download)
+##Acknowledgements
+This project utilizes nmap for network scanning. Refer to the nmap documentation for more [https://nmap.org/](details).
