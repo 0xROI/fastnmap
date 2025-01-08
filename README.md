@@ -9,6 +9,9 @@ This project is a **C-based wrapper** for `nmap` that performs fast port scannin
 - **Static compilation** ensures the binary runs independently of system libraries.
 - Saves the output in a file with a timestamp for easy tracking.
 
+**Warning**: This tool performs network scans that might trigger firewalls or intrusion detection systems (IDS). Please use it responsibly and only on systems you have permission to scan.
+
+
 ## Requirements
 - **GCC** (GNU Compiler Collection) installed for compiling the source code.
 - **nmap** installed on the system to perform the actual port scanning.
@@ -20,15 +23,19 @@ This project is a **C-based wrapper** for `nmap` that performs fast port scannin
    ```bash
    git clone https://github.com/0xROI/fastnmap
    gcc -static -o fastnmap fastnmap.c
+   
 ##User Manual:
 
 `./nmap_scan_wrapper <target-ip> [tcp|udp]`
+
 For a TCP scan:
 
 `./nmap_scan_wrapper 192.168.1.1 tcp`
+
 For a UDP scan:
 
 `./nmap_scan_wrapper 192.168.1.1 udp`
+
 Output:
 
 `nmap_<scan-type>_scan_<target-ip>_<timestamp>.txt`
