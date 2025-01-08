@@ -42,4 +42,5 @@ Output:
 You can download the statically compiled binary from the latest release here: [download](https://github.com/0xROI/fastnmap/raw/refs/heads/main/fastnmap)
 
 #Acknowledgements
+
 This project utilizes nmap for network scanning. Refer to the nmap documentation for more [details](https://nmap.org).
