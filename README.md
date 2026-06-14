@@ -43,3 +43,5 @@ You can download the statically compiled binary from the latest release here: [d
 
 # Acknowledgements
 This project utilizes nmap for network scanning. Refer to the nmap documentation for more [details](https://nmap.org).
+
+`I know this is vulnerable but this is intended the code was written to test memhack tool and later found this is useful in my OSCP exam and I started using it in my workflow. So dont report those issues`
